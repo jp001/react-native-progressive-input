@@ -8,10 +8,11 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
-    borderWidth: 1,
-    borderColor: 'lightgrey',
-    backgroundColor: 'white',
+    borderWidth: 0,
+    borderColor: 'darkgrey',
+    backgroundColor: '#44444488',
     borderRadius: 15,
+    color: 'white'
   },
   clearIcon: {
     marginLeft: 5,
@@ -20,6 +21,8 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 40,
     marginLeft: 10,
+    color: 'white',
+    fontFamily: 'Futura'
   },
   activityIndicator: {
     marginLeft: 5,
