@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { TextInput, View, ActivityIndicator, TouchableOpacity, StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 import ReactNativeHapticFeedback from 'react-native-haptic-feedback'
 
 const styles = StyleSheet.create({
@@ -80,6 +80,7 @@ class ProgressiveInput extends Component {
           maxLength={this.props.maxLength}
           multiline={this.props.multiline}
           onEndEditing={this.props.onEndEditing}
+          onSubmitEditing={this.props.onSubmitEditing}
           onChange={this.props.onChange}
           underlineColorAndroid={this.props.underlineColorAndroid}
         />
