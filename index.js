@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { TextInput, View, ActivityIndicator, TouchableOpacity, StyleSheet } from 'react-native';
+import { TextInput, View, ActivityIndicator, Platform, TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import ReactNativeHapticFeedback from 'react-native-haptic-feedback'
 
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     height: 40,
     marginLeft: 10,
     color: 'white',
-    fontFamily: 'Futura'
+    fontFamily: Platform.OS === 'ios' ? 'Futura' : 'SpartanMB',
   },
   activityIndicator: {
     marginLeft: 5,
